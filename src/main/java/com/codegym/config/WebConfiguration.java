@@ -84,7 +84,7 @@ public class WebConfiguration extends WebMvcConfigurerAdapter implements Applica
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/springjpa?characterEncoding=UTF-8");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/test_spring_module4?useUnicode=true&characterEncoding=utf8");
         dataSource.setUsername("root");
         dataSource.setPassword("123456");
         return dataSource;

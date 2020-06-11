@@ -1,6 +1,7 @@
 package com.codegym.controllers;
 
 import com.codegym.model.Blog;
+import com.codegym.repository.BlogRepository;
 import com.codegym.services.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,6 +18,9 @@ public class BlogController {
 
     @Autowired
     private BlogService blogService;
+
+    @Autowired
+    private BlogRepository blogRepository;
 
     @GetMapping("/")
     public ModelAndView listBlog() {

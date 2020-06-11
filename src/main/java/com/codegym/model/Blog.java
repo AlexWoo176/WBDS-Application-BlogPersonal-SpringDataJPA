@@ -11,6 +11,8 @@ public class Blog {
     private Long id;
 
     private String title;
+
+    @Column(columnDefinition = "long")
     private String content;
 
     @Override
